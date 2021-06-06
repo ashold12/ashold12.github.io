@@ -20,6 +20,8 @@ module.exports = {
         },
         blue: {
           DEFAULT: '#195190FF',
+          dark: '#133D6CFF',
+          darker: '#10335AFF',
         }
       },
     },
