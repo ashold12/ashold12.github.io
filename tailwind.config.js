@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -11,10 +11,10 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
         white: {
-          DEFAULT: '#F1F4FFFF'
-        }
+          DEFAULT: '#F1F4FFFF',
+        },
         gray: {
-          DEFAULT: '#A2A2A1FF'
+          DEFAULT: '#A2A2A1FF',
         }
       },
     },
