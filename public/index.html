@@ -9,16 +9,16 @@
 </head>
 <body class='antialiased bg-gray'>
   <script src="https://kit.fontawesome.com/f646f12155.js" crossorigin="anonymous"></script>
-  <header class='bg-white p-6 flex w-full'>
-    <div name='user' class='flex float-left'>
-      <img src="./images/edited.png" class='rounded-full w-32'>
-      <div class='ml-8'>
-        <h1 class="text-4xl font-bold">Alexander Shold</h1>
-        <h1 class="text-2xl">Full Stack Software Engineer</h1>
+  <header class='bg-white p-6 block flex-col md:flex md:flex-row w-full md:justify-between md:items-start'>
+    <div name='user' class='md:flex'>
+      <img src="./images/edited.png" class='rounded-full w-32 ml-auto mr-auto md:ml-0 md:mr-0'>
+      <div class='ml-auto mr-auto md:ml-8 md:mr-0'>
+        <h1 class="text-center md:text-left text-4xl font-bold">Alexander Shold</h1>
+        <h1 class="text-center md:text-left text-2xl">Full Stack Software Engineer</h1>
       </div>
     </div>
-    <a class='button text-2xl font-bold text-white bg-gray float-right' href = "mailto:ashold12@gmail.com" target="_blank">
-      <i class="fas fa-paper-plane"></i>
+    <a class='ml-auto mr-auto md:ml-0 md:mr-0 btn text-2xl font-bold text-white bg-gray rounded px-6 py-4 self-center inline-block' href = "mailto:ashold12@gmail.com" target="_blank">
+      <i class="fas fa-paper-plane pr-2"></i>
       Contact Me
     </a>
   </header>
