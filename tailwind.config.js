@@ -7,9 +7,19 @@ module.exports = {
       borderWidth: {
         6: '6px'
       },
+      width: {
+        200: '200px',
+        40: '40px'
+      },
+      height: {
+        40: '40px'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        yellow: {
+          DEFAULT: '#f0db4f'
+        },
         white: {
           DEFAULT: '#F1F4FFFF',
         },
@@ -20,6 +30,7 @@ module.exports = {
         },
         blue: {
           DEFAULT: '#195190FF',
+          light: '#d3e4f7FF',
           dark: '#133D6CFF',
           darker: '#10335AFF',
         }
