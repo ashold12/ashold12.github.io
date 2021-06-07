@@ -9,6 +9,7 @@ module.exports = {
       },
       width: {
         200: '200px',
+        140: '140px',
         40: '40px'
       },
       height: {
