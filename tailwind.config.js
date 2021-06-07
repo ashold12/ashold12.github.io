@@ -10,10 +10,13 @@ module.exports = {
       width: {
         200: '200px',
         140: '140px',
-        40: '40px'
+        40: '40px',
       },
       height: {
-        40: '40px'
+        40: '40px',
+      },
+      minWidth: {
+        140: '140px',
       },
       colors: {
         transparent: 'transparent',
