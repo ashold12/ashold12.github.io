@@ -27,7 +27,17 @@ module.exports = {
       },
       minWidth: {
         134: '134px',
+        '0': '0',
+        '1/4': '25%',
+        '4/12': '33%',
+        '1/2': '50%',
+        '3/4': '75%',
+        'full': '100%',
       },
+      maxHeigh: {
+        200: '200px'
+      },
+
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -52,7 +62,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      filter: ['hover', 'focus']
+    },
   },
   plugins: [],
 }

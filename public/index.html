@@ -29,8 +29,8 @@
     </div>
   </header>
   <div name='main' class='p-6 grid lg:grid-cols-3 gap-6'>
-    <div name='primary-section' class='lg:col-start-1 lg:col-end-3'>
-      <div name='about' class='bg-white rounded p-4 shadow-lg'>
+    <div name='primary-section' class='lg:col-start-1 lg:col-end-3 flex-col items-start'>
+      <div name='about' class='bg-white rounded p-4 shadow-lg mb-4'>
         <h2>About Me</h2>
         <p>
           Carpenter turned coder. I’m a full stack software engineer currently residing in the beautiful Duluth, MN. I enjoy tackling complex problems head on, and using my creative process to deliver efficient minimalist solutions.</br></br>
@@ -39,6 +39,62 @@
 
           When I’m not at my computer you can catch me outside, which I consider to be my natural habitat. I love the summer sun, exploring the local bodies of water to find new swim spots, frisbee/frisbee golf, hiking, or tossing around a ball with whomever will join me. I’m also a lover of music, and served as a percussionist and jazz drummer in highschool before joining a cover band in college.
         </p>
+      </div>
+      <!-- Break image wrap at 768 for mobile support / add hover effects to title and image-->
+      <div name='projects' class='bg-white rounded p-4 shadow-lg'>
+        <h2>Projects</h2>
+        <p class='mb-4'>
+          I'm not going to list this site here since you're already here. This page was made using no javascript/javascript frameworks. It is purely HTML and CSS composed via Tailwind.
+        </p>
+        <hr class='mt-7 mb-8 text-gray-darker'>
+        <div class='flex flex-wrap md:flex-nowrap mb-8'>
+          <div class='md:mr-4 md:ml-0 md:w-5/12 shadow-lg'>
+            <img src='./images/werewolf.jpg' class='rounded'>
+          </div>
+          <div class='md:w-7/12 mt-0'>
+            <h3 class='md:mt-0 md:leading-none font-extrabold mb-2 text-gray-dark hover:underline hover: cursor-pointer'>Werewolf - Browser Party Game</h3>
+            <p class=''>
+              Developed with a small team of engineers over five days and deployed on AWS. Heavily utlized sockets and event driven architecture to handle the game state. The game features a lobby, real time chat, conditional renders/permissions depending on player role.
+            </p>
+          </div>
+        </div>
+        <div class='flex flex-wrap md:flex-nowrap mb-8'>
+          <div class='md:mr-4 md:ml-0 md:w-5/12'>
+            <img src='./images/endorse.png' class='rounded'>
+          </div>
+          <div class='md:w-7/12 mt-0'>
+            <h3 class='md:mt-0 md:leading-none font-extrabold mb-2 text-gray-dark hover:underline hover: cursor-pointer'>EndorseMe - CLI LinkedIn Automation Tool</h3>
+            <p class=''>
+              LinkedIn endorsement tool with fully functional command line interface. Built on Node.js using the Puppeteer library and compiled to executable using Nexe. The tool will visit all supplied user URL's in headless browser and fully endorse all skills. The tool has optional connection request setting.
+            </p>
+          </div>
+        </div>
+        <div class='flex flex-wrap md:flex-nowrap mb-8'>
+          <div class='md:mr-4 md:ml-0 md:w-5/12'>
+            <img src='./images/catwalk.png' class='rounded'>
+          </div>
+          <div class='md:w-7/12 mt-0'>
+            <h3 class='md:mt-0 md:leading-none font-extrabold mb-2 text-gray-dark hover:underline hover: cursor-pointer'>Catwalk - React Retail Web-Portal</h3>
+            <p class=''>
+              Modular reviews component developed for retail web-portal. Utilized pre-existing legacy api to consume data as well as leave comments/reviews/product photos. Featured a modal for submitting new reviews with animated star rating component, sophisticated error handling and review sorting, and react portals for image uploads and report submissions.
+            </p>
+          </div>
+        </div>
+        <div class='flex flex-wrap md:flex-nowrap mb-8'>
+          <div class='md:mr-4 md:ml-0 md:w-5/12 shadow-lg'>
+            <a href='https://github.com/ashold12/endorseMe/tree/master' target='_blank'>
+              <img src='./images/backend.jpg' class='rounded hover:filter-dark transition ease-in-out duration-250'>
+            </a>
+          </div>
+          <div class='md:w-7/12 mt-0'>
+            <a href='https://github.com/ashold12/endorseMe/tree/master' target='_blank'>
+              <h3 class='md:mt-0 md:leading-none font-extrabold mb-2 text-gray-dark hover:underline hover: cursor-pointer'>REST In Peace - Scaled Backend API/Microservice</h3>
+            </a>
+            <p class=''>
+              Refactored legacy RESTFUL API with mirrored endpoints/request parameters to increase throughput. Imported and nested 15 million records of user data via Mongo shell, and used aggregation pipeline to nest data into highly consumable format.  Deployed on 8 AWS instances with Nginx load balancer.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- SECONDARY ELEMENTS-->
@@ -59,27 +115,27 @@
       </div>
       <div class='bg-white rounded p-6 pl-4 w-full shadow-lg text-lg'>
         <h2>Skills</h2>
-        <p class='mb-4 text-sm text-gray-darker'>I am a modern Javascript expert with experience across the complete stack and development cycle.</p>
-        <h3 class='text-gray-darker mb-1 mt-2'>Front End</h3>
+        <p class='mb-4 text-base'>I am a modern Javascript expert with experience across the complete stack and development cycle.</p>
+        <h3 class='text-gray-darker mb-1 mt-2 text-lg'>Front End</h3>
         <hr class='mb-2 text-gray-darker'>
         <!-- SKILLS r1 -->
         <div class='flex flex-wrap justify-between'>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-0'>
-              <img src='./images/javascript.png'/>
+              <img src='./images/logos/javascript.png'/>
             </div>
             <span class='self-center'>Javascript</span>
           </div>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 md:min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/react.png'/>
+              <img src='./images/logos/react.png'/>
             </div>
             <span class='self-center'>ReactJS</span>
           </div>
           <!-- row2 -->
           <div class='mb-4  font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/html5.png'/>
+              <img src='./images/logos/html5.png'/>
             </div>
             <span class='self-center'>HTML5</span>
           </div>
@@ -87,44 +143,44 @@
           <div class=' w-0 xs:w-full'></div>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 md:min-w-134'>
             <div class='w-40 h-40 max-w-40px object-contain inline-block mr-2'>
-              <img src='./images/css3.png'/>
+              <img src='./images/logos/css3.png'/>
             </div>
             <span class='self-center'>CSS3</span>
           </div>
           <!-- row3 -->
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134 max-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/tailwind.svg'/>
+              <img src='./images/logos/tailwind.svg'/>
             </div>
             <span class='self-center'>Tailwind</span>
           </div>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 md:min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/jquery.png'/>
+              <img src='./images/logos/jquery.png'/>
             </div>
             <span class='self-center'>jQuery</span>
           </div>
           <!----------- Backend ------------->
-          <h3 class='text-gray-darker mb-1 mt-2 w-full'>Back End</h3>
+          <h3 class='text-gray-darker mb-1 mt-2 w-full text-lg'>Back End</h3>
           <hr class='mb-2 text-gray-darker w-full'>
 
           <!-- SKILLS r1 -->
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/node.png'/>
+              <img src='./images/logos/node.png'/>
             </div>
             <span class='self-center'>Node.js</span>
           </div>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/express.png'/>
+              <img src='./images/logos/express.png'/>
             </div>
             <span class='self-center'>Express</span>
           </div>
           <!-- row2 -->
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-1'>
-              <img src='./images/mongo.png'/>
+              <img src='./images/logos/mongo.png'/>
             </div>
             <span class='self-center'>MongoDB</span>
           </div>
@@ -132,20 +188,20 @@
           <div class='xs:w-full'></div>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 max-w-40px object-contain inline-block mr-2'>
-              <img src='./images/mysql.png'/>
+              <img src='./images/logos/mysql.png'/>
             </div>
             <span class='self-center'>MySql</span>
           </div>
           <!-- row3 -->
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/aws.png'/>
+              <img src='./images/logos/aws.png'/>
             </div>
             <span class='self-center'>AWS</span>
           </div>
           <div class='mb-4 font-bold text-sm text-gray-darker flex w-134 min-w-134'>
             <div class='w-40 h-40 object-contain inline-block mr-2'>
-              <img src='./images/socket.png'/>
+              <img src='./images/logos/socket.png'/>
             </div>
             <span class='self-center'>Socket.io</span>
           </div>
