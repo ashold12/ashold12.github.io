@@ -5,9 +5,14 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['Lato', 'arial'],
+      serif: ['Roboto', 'sans-serif']
+    },
     extend: {
       screens: {
         'xs': '508px',
+        'xsm': '620px',
         'sm':	'640px',
         'md':	'768px',
         'xmd': '900',
