@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-serif;
+  }
+  h2 {
+    @apply text-2xl mb-4 font-semibold font-serif;
+  }
+  h3 {
+    @apply text-gray-darker mb-1 mt-2 text-lg font-serif;
+  }
+}
+
+@layer utilities {
+  @variants hover, focus {
+    .filter-dark {
+      filter: brightness(75%);
+      cursor: pointer;
+    }
+  }
+}
